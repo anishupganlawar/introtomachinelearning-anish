@@ -1,1 +1,75 @@
+# Code & Explanation
 
+## Basic Data Exploration
+
+This section contains ONLY the code used in data exploration, along with short explanations of what each line does. Perfect for quick revision.
+
+---
+
+### **1. Load the Dataset**
+
+```python
+import pandas as pd
+
+data = pd.read_csv("path/to/file.csv")
+```
+
+**Explanation:**  
+- Imports pandas  
+- Reads the CSV file and loads it into a DataFrame called `data`  
+
+---
+
+### **2. View the First Few Rows**
+
+```python
+data.head()
+```
+
+**Explanation:**  
+Displays the first 5 rows of the dataset. Helps you understand what the data looks like.
+
+---
+
+### **3. Summary Statistics**
+
+```python
+data.describe()
+```
+
+**Explanation:**  
+Shows count, mean, std, min, max, and percentiles for numeric columns.
+
+---
+
+### **4. Select a Single Column**
+
+```python
+data["SalePrice"]
+```
+
+**Explanation:**  
+Extracts one column from the dataset as a pandas Series.
+
+---
+
+### **5. Select Multiple Columns**
+
+```python
+columns = ["LotArea", "YearBuilt", "1stFlrSF", "FullBath"]
+subset = data[columns]
+```
+
+**Explanation:**  
+Creates a new DataFrame containing only the selected columns.
+
+---
+
+### **6. Count Missing Values**
+
+```python
+data.isnull().sum()
+```
+
+**Explanation:**  
+Counts
