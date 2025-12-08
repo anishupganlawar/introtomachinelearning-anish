@@ -73,3 +73,49 @@ data.isnull().sum()
 
 **Explanation:**  
 Counts
+
+## **7. Check Data Types**
+
+```python
+data.dtypes
+```
+
+**Explanation:**  
+Shows whether each column is int, float, object (text), etc.
+
+---
+
+## **8. Explore Unique Values (for categorical/text columns)**
+
+```python
+data["Neighborhood"].unique()
+```
+
+**Explanation:**  
+Lists all unique categories in the selected column.
+
+---
+
+## **9. Basic Visual Exploration**
+
+### 📊 Histogram
+
+```python
+data["SalePrice"].hist()
+```
+
+**Explanation:**  
+Shows the distribution of a numeric feature.
+
+---
+
+### 📈 Scatterplot
+
+```python
+data.plot.scatter("GrLivArea", "SalePrice")
+```
+
+**Explanation:**  
+Helps visualize the relationship between two numeric variables.
+
+---
