@@ -2,8 +2,6 @@
 
 ## Basic Data Exploration
 
-This section contains ONLY the code used in data exploration, along with short explanations of what each line does. Perfect for quick revision.
-
 ---
 
 ### **1. Load the Dataset**
